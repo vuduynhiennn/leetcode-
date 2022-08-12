@@ -1,6 +1,3 @@
-let s = "badc"
-let t = "baba"
-
 let isIsomorphic = function(s, t) {
     let arr = []
     for (let j = 0; j < s.length; j++) {

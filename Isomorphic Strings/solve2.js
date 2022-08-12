@@ -1,3 +1,5 @@
+let s = 'abcdd'
+let t = 'cleac'
 function isomorphic(s, t) {
     if (s.length !== t.length) {
         return false;
@@ -6,6 +8,7 @@ function isomorphic(s, t) {
     for(var i = 0; i < s.length; i++) {
         var a = s[i]; 
         var b = t[i];
+        console.log(map[a])
         if (typeof map[a] === "undefined") {
             map[a] = b;
 
@@ -23,3 +26,5 @@ function isomorphic(s, t) {
     }
     return true;
 }
+
+isomorphic(s, t)
